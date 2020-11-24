@@ -1,0 +1,28 @@
+{
+	"name": "docs-readability",
+	"description": "Visual studio code extension for indicating markdown docs readability",
+	"publisher": "david-mark-clements",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"main": "./extension.js",
+	"scripts": {
+		"test": "tap test/*.test.js",
+		"lint": "standard"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.32.0",
+		"standard": "^16.0.3",
+		"tap": "^14.11.0"
+	},
+	"dependencies": {
+		"remark": "^13.0.0",
+		"remark-gfm": "^1.0.0",
+		"strip-markdown": "^4.0.0",
+		"text-readability": "^1.0.5"
+	}
+}
